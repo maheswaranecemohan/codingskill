@@ -1,4 +1,4 @@
-package com.vm.codingskillapplication.leetcode.string
+package com.vm.codingskillapplication.leetcod
 
 fun main(args : Array<String>){
 //3.Longest Substring Without Repeating Characters
