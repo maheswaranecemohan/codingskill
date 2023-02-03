@@ -1,18 +1,72 @@
 package com.vm.codingskillapplication.leetcod
 
 fun main(args : Array<String>){
-//3.Longest Substring Without Repeating Characters
-//Input: s = "abcabcbb"
-//Output: 3
-val input ="abc".toCharArray()
-    //input.asList().map {  }
-    //println(input.size)
-   /* for ((index, value ) in input.withIndex()){
-        println(index.toString()+"---"+ value)
-    }*/
-    var currentIndex =0
-    println( input.size)
-    for (values in currentIndex until input.size){
-        println( values)
-    }
+    //Longest Substring Without Repeating Characters
+    //https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+    /*Input: s = "abcabcbb"
+    Output: 3
+    Explanation: The answer is "abc", with the length of 3.*/
+
+    val input ="abcabcbb"
+    solution(input)
 }
+
+fun solution2(input : String){
+    val s = input
+    val n = s.length
+    var leftIndex =0
+    var rightIndex =0
+    var lengthOutput=0
+    var charMap= mutableMapOf<Char,Int>()
+    while (rightIndex<n){
+
+    }
+    System.out.println("----"+lengthOutput)
+}
+
+
+fun solution(input : String){
+    val s = input
+    val n = s.length
+    var leftIndex =0
+    var rightIndex =0
+    var lengthOutput=0
+    var stringSet= mutableSetOf<Any>()
+    while (rightIndex<n){
+        if (stringSet.contains(s.get(rightIndex))){
+            stringSet.remove(s.get(leftIndex))
+            leftIndex++
+            lengthOutput = Math.max(rightIndex-leftIndex+1,lengthOutput)
+        }else{
+            lengthOutput = Math.max(rightIndex-leftIndex+1,lengthOutput)
+            stringSet.add(s.get(rightIndex))
+            rightIndex++
+        }
+    }
+    System.out.println("----"+lengthOutput)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
