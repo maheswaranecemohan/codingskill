@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vm.codingskillapplication">
+    package="com.mphasis.testmodule">
 
     <application
         android:allowBackup="true"
@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CodingSkillApplication">
         <activity
-            android:name=".zzznewui.MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".zzznewui.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

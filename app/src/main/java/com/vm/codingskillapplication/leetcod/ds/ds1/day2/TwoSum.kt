@@ -23,7 +23,7 @@ fun returnindexArray1(nums :IntArray,target :Int ):IntArray{
             return intArrayOf(index1!!,indexA)
         }else{
             val value2 = target-value1
-            mutableMap.set(value2,indexA)
+            mutableMap[value2] = indexA
         }
     }
     return intArrayOf()
